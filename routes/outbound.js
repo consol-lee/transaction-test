@@ -9,7 +9,7 @@ require('dotenv').config();
 
 const port = 6500;
 //const timeOut = process.env.timeout;
-const timeOut = 7000;
+const timeOut = 5000;
 
 router.get('/', async (req, res, next) => {
     try {
