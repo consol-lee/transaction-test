@@ -11,4 +11,8 @@ router.get('/',(req,res,next)=>{
     res.send(hostname);
 })
 
+router.get('/test',(req,res,next)=>{
+    res.send("version_1");
+})
+
 module.exports = router;
