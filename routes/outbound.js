@@ -61,22 +61,6 @@ router.get('/', async (req, res, next) => {
     } catch (error) {
         next(error);
     }
-
-    // try{ 	const { srcIP,condition } = req.query; 	const outboundUrl =
-    // `http://${srcIP}:${port}/recv/nacl`; 	const response = await
-    // axios.get(outboundUrl, {timeout: timeOut}); 	let _response = {}; 	const
-    // tcpSentPort = TCPTracker.getSentPort(srcIP); 	console.log(response);
-    // if(response.data.result === "pass"){ 		_response.desc="연결이 되어야 성공 [ 현재 연결 됨
-    // ]" 		_response.result="pass"; 		_response.tcpSentPort = tcpSentPort;
-    // res.send(_response); 	} 	else if(condition && condition === 'false' &&
-    // response.data.result === "pass"){ 		_response.desc="연결이 안되어야 성공 [ 현재 연결 됨 ]";
-    // _response.result="fail"; 		_response.tcpSentPort = tcpSentPort;
-    // res.send(_response); 	} 	else if(condition && condition === 'false' &&
-    // response.data.result === "fail"){ 		_response.desc="연결이 안되어야 성공 [ 현재 연결 안됨 ]"
-    // _response.result="pass"; 		_response.tcpSentPort = tcpSentPort;
-    // res.send(_response); 	} 	else{ 		_response.desc="연결이 되어야 성공 [ 현재 연결됨 ]"
-    // _response.result="fail"; 		_response.tcpSentPort = tcpSentPort;
-    // res.send(_response); 	} } 	catch(error){ 		next(error); 	}
 });
 
 router.get('/check', async (req, res, next) => {

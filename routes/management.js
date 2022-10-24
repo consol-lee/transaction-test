@@ -6,7 +6,7 @@ const FileTracker = require('../utils/fileTracker');
 
 
 const port = 6500;
-const timeOut = 5000;
+const timeOut = 7000;
 
 
 // management Router
