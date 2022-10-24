@@ -12,4 +12,4 @@ COPY . /app
  
 EXPOSE 6500
  
-CMD ["npm", "docker-start"]
+CMD ["npm", "run", "docker-start"]
