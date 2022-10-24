@@ -2,6 +2,9 @@ FROM node:16.14
 
 MAINTAINER hansol
 
+RUN apt-get update -yq \ 
+&& apt-get install curl net-tools
+
 WORKDIR /app
  
 COPY package*.json /app/
