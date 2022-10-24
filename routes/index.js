@@ -12,7 +12,7 @@ router.get('/',(req,res,next)=>{
 })
 
 router.get('/test',(req,res,next)=>{
-    res.send("version_1");
+    res.send("version_2");
 })
 
 module.exports = router;
