@@ -12,7 +12,7 @@ const dgram = require('dgram');
 require('dotenv').config();
 
 const port = 6500;
-const timeOut = parseInt(process.env.timeout);
+const timeOut = 5000;
 // 테스트 결과 서버로 전송 
 router.get('/',(req,res,next)=>{
     try {
@@ -59,7 +59,7 @@ router.get('/',(req,res,next)=>{
 	   _response.result="fail";
 	   res.send(_response);
 	}
-	// condiiton 이 없는 형태로 then 으로 넘어올신 성공 
+	// condiiton 이 없는 형태로 then 으로 넘어올시 성공 
 	else{
 	    _response.conditionCase="pass";
 	    _response.desc="연결이 되어야 성공 [ 현재 연결 됨 ] ";
