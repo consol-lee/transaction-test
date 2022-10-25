@@ -3,7 +3,7 @@ FROM node:16.14
 MAINTAINER hansol
 
 RUN apt-get update -yq \ 
-&& apt-get install -y curl net-tools
+&& apt-get install -y curl net-tools tcpdump
 
 WORKDIR /app
  

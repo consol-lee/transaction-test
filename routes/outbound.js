@@ -4,6 +4,7 @@ const url = require('url');
 const os = require('os');
 const axios = require('axios');
 const TCPTracker = require('../utils/tcpTracker');
+const { syncBuiltinESMExports } = require('module');
 
 require('dotenv').config();
 
